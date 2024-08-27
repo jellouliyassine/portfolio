@@ -13,6 +13,7 @@ import { FaRegStar } from "react-icons/fa6";
 import { GiTeamIdea } from "react-icons/gi";
 import { GiBrain } from "react-icons/gi";
 import { GiFlexibleStar } from "react-icons/gi";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Home() {
   function open(url) {
@@ -410,45 +411,45 @@ function Home() {
           >
             <ul style={{ margin: "20px" }}>
               <li>
-                <a href="/Project">
+                <Link to="/Project#p1">
                   <b style={{ color: "#ec2471" }}>WearHouser</b>{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Project">
+                <Link to="/Project#p2">
                   <b style={{ color: "#ec2471" }}>
                     3-tables-infinite-qube-problem-solving
                   </b>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/Project">
+                <Link to="/Project#p3">
                   <b style={{ color: "#ec2471" }}>ScrunProjectPlaning</b>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/Project">
+                <Link to="/Project#p4">
                   <b style={{ color: "#ec2471" }}>MSP_Planification_Optimum</b>{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Project">
+                <Link to="/Project#p5">
                   <b style={{ color: "#ec2471" }}>
                     Roadmap-Segmentation-and-Extraction-from-Satellite-Images
                   </b>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Project">
+                <Link to="/Project#p6">
                   <b style={{ color: "#ec2471" }}>switch_cnfig</b>{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Project">
+                <Link to="/Project#p7">
                   <b style={{ color: "#ec2471" }}>TIC_TAC_TOE_java_minmax</b>{" "}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

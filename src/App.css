@@ -3,6 +3,25 @@
 .App-link {
   color: #61dafb;
 }
+@media (max-width: 760px) 
+{
+   body
+   {
+       font-size: 10px; 
+   }
+   h1
+   {
+       font-size:15px;
+   }
+   span
+   {
+    font-size:10px;
+   }
+   p{
+    font-size:17px;
+
+   }
+}
 body{
  
   overflow: auto; /* Enable scrolling */
