@@ -1,33 +1,17 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
-
+body{
+ 
+  overflow: auto; /* Enable scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+body::-webkit-scrollbar {
+ width: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +19,171 @@
   to {
     transform: rotate(360deg);
   }
+}
+.paage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #ec2471 solid 2px;
+border-radius: 10px;
+transition: box-shadow 0.3s ease;
+  background-color: #282c34;
+  color: azure;
+}
+.head{
+  display: flex ;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 20px;
+flex-wrap: wrap;
+
+}
+.gradient-text {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff0296, #f08839);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text2 {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff0296, #f08839);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.container{
+  background-color: #1c212b;
+  height: 100%;
+  padding : 50px;
+ 
+}
+.experience{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+align-items: center;
+ 
+}
+
+.school{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+border: #ec2471 solid 1px;
+border-radius: 20px;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+a:visited {
+  color: #c1c0c0; /* Set the color to be the same as unvisited links */
+}
+.Miniexperience{
+  border: #ffffff solid 1px;
+  border-radius: 10px;
+margin: 10px;
+box-shadow: #fff8fb 0px 1px 3px 1px;
+width:500px;
+
+}
+.homecontainer{
+  background-color: #1c212b;
+  height: 100%;
+ 
+}
+.inerdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textsize{
+  font-size: clamp(16px, calc(20px + (36–20) * (100vw - 768px)/(1920–768)), 48px);
+
+}
+.des{
+  display: flex;
+justify-content: center;
+align-items:center ;
+ flex-direction: column;
+ font-family: serif;
+ font-size: 30px;
+ font-weight: bolder;
+ border-bottom: #ec2471 solid 4px;
+ 
+ color: #ffffff;
+}
+.cnt{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ 
+align-items:flex-start ;
+margin-top: 20px;
+flex-wrap: wrap;
+font-size:120%;
+flex-shrink: 1;
+}
+.inerheader{
+  margin-top: 40px;
+  display: flex ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+
+}
+.headerr{
+  display: flex ;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 20px;
+
+flex-wrap: wrap;
+align-items: center;
+border-radius: 50px;
+background-color: #282c34;
+border: #1c212b solid 1px;
+padding: 2px;
+margin-top: -40px;
+color: #c1c0c0;
+}
+
+.glowing-text {
+  cursor: pointer;
+  color: #fff;
+ text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 20px #ff00ff;
+  font-weight: 300;
+  font-size: larger;
+  transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.glowing-text-experience{
+  color: #fff;
+ text-shadow: 0 0 1px #fff,
+               
+               0 0 20px #ffffff;
+}
+
+.glowing-text:hover {
+  font-weight: bold;
+  font-size: 30px;
+}
+.paage:hover{
+  box-shadow: #ff0080 0px 2px 5px 2px, rgba(165, 0, 165, 0.616) 0px 1px 3px -1px;
+}
+.triks:hover{
+  box-shadow: #ff0080 0px 2px 5px 2px, rgba(165, 0, 165, 0.616) 0px 1px 3px -1px;
+}
+.triks{
+  transition: box-shadow 0.3s ease;
 }
