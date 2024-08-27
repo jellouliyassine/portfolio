@@ -29,6 +29,8 @@ border-radius: 10px;
 transition: box-shadow 0.3s ease;
   background-color: #282c34;
   color: azure;
+  flex-shrink: 2;
+
 }
 .head{
   display: flex ;
@@ -37,6 +39,8 @@ transition: box-shadow 0.3s ease;
   gap: 5px;
   margin-bottom: 20px;
 flex-wrap: wrap;
+flex-shrink: 2;
+
 
 }
 .gradient-text {
@@ -61,6 +65,7 @@ flex-wrap: wrap;
   background-color: #1c212b;
   height: 100%;
   padding : 50px;
+  
  
 }
 .experience{
@@ -68,6 +73,8 @@ flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
 align-items: center;
+flex-shrink: 2;
+
  
 }
 
@@ -80,6 +87,7 @@ border-radius: 20px;
 align-items: flex-start;
 flex-wrap: wrap;
 gap: 20px;
+flex-shrink: 2;
 
 }
 a:visited {
@@ -102,6 +110,8 @@ width:500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 2;
+
 }
 .textsize{
   font-size: clamp(16px, calc(20px + (36–20) * (100vw - 768px)/(1920–768)), 48px);
@@ -116,14 +126,16 @@ align-items:center ;
  font-size: 30px;
  font-weight: bolder;
  border-bottom: #ec2471 solid 4px;
- 
+ flex-shrink: 2;
+
  color: #ffffff;
 }
 .cnt{
   display: flex;
   justify-content: center;
   gap: 20px;
- 
+  flex-shrink: 2;
+
 align-items:flex-start ;
 margin-top: 20px;
 flex-wrap: wrap;
@@ -142,6 +154,7 @@ flex-shrink: 1;
 .headerr{
   display: flex ;
   justify-content: flex-end;
+  flex-shrink: 2;
   width: 100%;
   gap: 40px;
   margin-bottom: 20px;

@@ -153,13 +153,17 @@ function Home() {
                 style={{
                   color: "#c1c0c0",
                   "margin-bottom": "20px",
+                  width:"100%",
                 }}
               >
-                A Software Engineer with a strong focus on creating value, adept
-                at designing innovative solutions and resolving complex
+                <p  style={{
+                  padding:"40px",
+                }}>
+                A Software Engineer with a strong focus on creating value, adept at designing innovative solutions and resolving complex
                 problems. Equipped with a critical mindset, I excel at analyzing
                 challenges from multiple perspectives to develop effective and
                 efficient software solutions{" "}
+                </p>
               </div>
             </div>
           </div>
@@ -172,6 +176,8 @@ function Home() {
               "justify-content": "center",
               color: "#ec2471",
               gap: "40px",
+              flexWrap:"wrap",
+              flexShrink:"1",
               width: "100%",
             }}
           >
@@ -223,15 +229,17 @@ function Home() {
               border: "#ec2471 solid 1px",
               "border-top": "unset",
               display: "flex",
+              "flex-shrink": "2",
+
               "align-items": "center",
               "justify-content": "center",
               padding: "8px",
               "border-bottom-left-radius": "90%",
               "border-bottom-right-radius": "90%",
-              "padding-bottom": "10%",
+              "padding-bottom": "60px",
             }}
           >
-            <ul style={{ margin: "20px" }}>
+            <ul style={{ margin: "20px",maxWidth:"80vh" }}>
               <li>
                 <b style={{ color: "#ec2471" }}>Programming</b>{" "}
                 javaEE,Java,HTML,CSS,PL/SQL,SQL,JavaScript.
@@ -256,11 +264,12 @@ function Home() {
                 OrangeBI,TalendETL,Linux{" "}
               </li>
               <li>
-                <b style={{ color: "#ec2471" }}>Methodologies</b>{" "}
-                Scrum,IHM(InterfaceHomme‑Machine),DesignPatterns
+                <b style={{ color: "#ec2471" }}>Methodologies</b>{" "}Scrum , IHM (InterfaceHomme‑Machine) , DesignPatterns
               </li>
             </ul>
+            
           </div>
+          
         </div>
 
         <div>
@@ -401,12 +410,12 @@ function Home() {
           >
             <ul style={{ margin: "20px" }}>
               <li>
-                <a href="/Project#p1">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>WearHouser</b>{" "}
                 </a>
               </li>
               <li>
-                <a href="/Project#p2">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>
                     3-tables-infinite-qube-problem-solving
                   </b>
@@ -414,30 +423,30 @@ function Home() {
               </li>
 
               <li>
-                <a href="/Project#p3">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>ScrunProjectPlaning</b>
                 </a>
               </li>
 
               <li>
-                <a href="/Project#p4">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>MSP_Planification_Optimum</b>{" "}
                 </a>
               </li>
               <li>
-                <a href="/Project#p5">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>
                     Roadmap-Segmentation-and-Extraction-from-Satellite-Images
                   </b>
                 </a>
               </li>
               <li>
-                <a href="/Project#p6">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>switch_cnfig</b>{" "}
                 </a>
               </li>
               <li>
-                <a href="/Project#p7">
+                <a href="/Project">
                   <b style={{ color: "#ec2471" }}>TIC_TAC_TOE_java_minmax</b>{" "}
                 </a>
               </li>
