@@ -32,6 +32,7 @@ function App() {
 
         <Routes>
           {/* Define a route for the Home component */}
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/Experience" element={<Experience />} />
           <Route path="/Project" element={<Projects />} />
