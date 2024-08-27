@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import logo from "./me.jpg";
 import cool from "./cool.png";
@@ -25,7 +25,19 @@ function App() {
   function openGmail() {
     window.location.href = "mailto:yassine.jellouli.2001@gmail.com";
   }
-
+  useEffect(() => {
+    // Check if the page has been refreshed before
+    if (!localStorage.getItem('refreshed')) {
+        // Set the flag in local storage to indicate the page has been refreshed
+        localStorage.setItem('refreshed', 'true');
+        // Refresh the page
+        window.location.reload();
+    } else {
+        // Optionally, clear the flag to allow future refreshes if needed
+        localStorage.removeItem('refreshed');
+    }
+}, []);
+console.log("refreched");
   return (
       <div className="container">
         <Header />
