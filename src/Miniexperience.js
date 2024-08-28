@@ -31,7 +31,7 @@ function Miniexperience({content, title, img}) {
           backgroundSize: "cover", // Adjusts the background image to cover the entire div
           backgroundPosition: "center", // Centers the background image
           height: "200px", // Example height, adjust as needed
-          width: "500px", // Example width, adjust as needed
+          // Example width, adjust as needed
         }}
       >
       
