@@ -3,27 +3,23 @@
 .App-link {
   color: #61dafb;
 }
-@media (max-width: 760px) 
+@media (max-width: 410px) 
 {
-   body
-   {
-       font-size: 10px; 
-   }
+ .forshrink{
+  font-size: 5px;
+ }
    h1
    {
-       font-size:15px;
+       font-size:32px;
    }
-   span
-   {
-    font-size:10px;
-   }
+  
    p{
     font-size:17px;
 
    }
 }
 body{
- 
+
   overflow: auto; /* Enable scrolling */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
@@ -110,7 +106,7 @@ flex-shrink: 2;
   background-color: #1c212b;
   height: 100%;
   padding : 50px;
-  
+
  
 }
 .experience{
@@ -206,7 +202,7 @@ align-items: center;
   
   flex-wrap: wrap;
   gap: 10px;
-  width: 80%;
+
 
 }
 h1{
@@ -215,12 +211,10 @@ h1{
 .headerr{
   display: flex ;
   justify-content: flex-end;
-  flex-shrink: 2;
-  width: 100%;
-  gap: 40px;
+  gap: 15px;
   margin-bottom: 20px;
-
-flex-wrap: wrap;
+min-width: fit-content;
+flex-wrap: nowrap;
 align-items: center;
 border-radius: 50px;
 background-color: #282c34;
@@ -237,7 +231,7 @@ color: #00b386;
                0 0 10px #fff,
                0 0 20px #00b386;
   font-weight: 300;
-  font-size: larger;
+  font-size: 1rem;
   transition: font-size 0.3s ease, font-weight 0.3s ease;
 }
 
