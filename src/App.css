@@ -3,20 +3,98 @@
 .App-link {
   color: #61dafb;
 }
-@media (max-width: 410px) 
-{
- .forshrink{
-  font-size: 5px;
- }
-   h1
-   {
-       font-size:32px;
-   }
-  
-   p{
-    font-size:17px;
+@media (max-width: 768px) {
+  html {
+    font-size: 15px; /* 1rem = 15px */
+  }
 
-   }
+  h1 {
+    font-size: 2.2rem; /* 33px */
+  }
+
+  p {
+    font-size: 1.0625rem; /* 16px */
+  }
+  span{
+    font-size:1.0625rem;
+  }
+  li{
+    font-size: 1.0625rem;
+
+  }
+}
+
+/* Smartphones in landscape mode (up to 576px) */
+@media (max-width: 576px) {
+  html {
+    font-size: 14px; /* 1rem = 14px */
+  }
+
+  h1 {
+    font-size: 2rem; /* 28px */
+  }
+
+  p {
+    font-size: 1rem; /* 14px */
+  }
+  span{
+    font-size: 1rem;
+  }
+  li{
+    font-size: 1rem;
+
+  }
+}
+
+/* Smartphones in portrait mode (up to 410px) */
+@media (max-width: 410px) {
+  html {
+    font-size: 13px; /* 1rem = 13px */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* 23.4px */
+  }
+
+  p {
+    font-size: 0.9375rem; /* 12.2px */
+  }
+  li{
+    font-size: 0.9375rem;
+
+  }
+  .forshrink {
+    font-size: 0.625rem; /* 8.125px */
+  }
+  span{
+    font-size: 0.9375rem;
+  }
+}
+
+/* Smallest screens, very small smartphones (up to 320px) */
+@media (max-width: 320px) {
+  html {
+    font-size: 12px; /* 1rem = 12px */
+  }
+
+  h1 {
+    font-size: 1.6rem; /* 19.2px */
+  }
+
+  p {
+    font-size: 0.875rem; /* 10.5px */
+  }
+
+  .forshrink {
+    font-size: 0.5rem; /* 6px */
+  }
+  li{
+    font-size: 0.875rem;
+
+  }
+  span{
+    font-size: 0.875rem;
+  }
 }
 body{
 
@@ -106,7 +184,7 @@ flex-shrink: 2;
   background-color: #1c212b;
   height: 100%;
   padding : 50px;
-
+  min-width:"600px";
  
 }
 .experience{

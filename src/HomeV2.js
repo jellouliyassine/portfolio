@@ -207,7 +207,7 @@ function HomeV2() {
           </div>
           <h1 style={{marginBottom:"-20px",marginLeft:"8px",marginRight:"8px",backgroundColor:"#1c212b",zIndex:"1"}}>Skills</h1>
 
-          <div style={{ border: "#00b386 solid 1px", width:"fit-content",borderRadius:"10px",padding:"60px"}}>
+          <div style={{ border: "#00b386 solid 1px", width:"fit-content",borderRadius:"10px",padding:"10px"}}>
 
 
           <div
@@ -215,11 +215,11 @@ function HomeV2() {
             style={{
               "margin-top": "-14px",
               color: "#c1c0c0",
-             marginLeft:"-20px",
+           
              fontSize:"20px",  
             }}
           >
-            <ul >
+            <ul style={{display:"flex","flex-direction":"column",alignItems:"flex-start"}} >
               <li>
                 <span style={{ color: " #00b386 " }}>Programming :</span>{" "}
                 javaEE,Java,HTML,CSS,PL/SQL,SQL,JavaScript.
