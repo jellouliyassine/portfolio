@@ -51,6 +51,21 @@ transition: box-shadow 0.3s ease;
   flex-shrink: 2;
 
 }
+
+.paagev2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+border-radius: 10px;
+transition: box-shadow 0.3s ease;
+
+  color: azure;
+  flex-shrink: 2;
+
+}
+
+
+
 .head{
   display: flex ;
   justify-content: center;
@@ -71,6 +86,17 @@ flex-shrink: 2;
   background-clip: text;
   color: transparent;
 }
+
+.gradient-textv2 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .gradient-text2 {
   font-size: 20px;
   font-weight: bold;
@@ -101,7 +127,7 @@ margin: 2vw;
   display: flex;
   justify-content: center;
   height: 100%;
-border: #ec2471 solid 1px;
+border: #00b386 solid 1px;
 border-radius: 20px;
 align-items: flex-start;
 flex-wrap: wrap;
@@ -165,10 +191,26 @@ flex-shrink: 1;
   margin-top: 40px;
   display: flex ;
   justify-content: space-between;
+  
   flex-wrap: wrap;
   gap: 10px;
   width: 80%;
 
+}
+
+.inerheaderv2{
+  margin-top: 40px;
+  display: flex ;
+  flex-direction: column;
+align-items: center;
+  
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+
+}
+h1{
+  text-align: center;
 }
 .headerr{
   display: flex ;
@@ -185,7 +227,7 @@ background-color: #282c34;
 border: #1c212b solid 1px;
 padding: 2px;
 margin-top: -40px;
-color: #c1c0c0;
+color: #00b386;
 }
 
 .glowing-text {
@@ -193,7 +235,7 @@ color: #c1c0c0;
   color: #fff;
  text-shadow: 0 0 5px #fff,
                0 0 10px #fff,
-               0 0 20px #ff00ff;
+               0 0 20px #00b386;
   font-weight: 300;
   font-size: larger;
   transition: font-size 0.3s ease, font-weight 0.3s ease;
@@ -201,15 +243,12 @@ color: #c1c0c0;
 
 .glowing-text-experience{
   color: #fff;
- text-shadow: 0 0 1px #fff,
+ text-shadow: 0 0 1px #00b386,
                
-               0 0 20px #ffffff;
+               0 0 20px #00b386;
 }
 
-.glowing-text:hover {
-  font-weight: bold;
 
-}
 .paage:hover{
   box-shadow: #ff0080 0px 2px 5px 2px, rgba(165, 0, 165, 0.616) 0px 1px 3px -1px;
 }

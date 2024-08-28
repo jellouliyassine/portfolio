@@ -49,7 +49,7 @@ function Project({content, title, img,txt}) {
         </span>
       <div>
         <br></br>
-        <div style={{ color: "#ec2471",display: "flex",
+        <div style={{ color: " #00b386",display: "flex",
             
            justifyContent:"flex-start",flexWrap:"wrap"}}>
         {content.map((c, index) => (
@@ -60,7 +60,7 @@ function Project({content, title, img,txt}) {
              padding:"3px",
               borderRadius: "50px",
               "background-color": "#1c212b",
-              border: "#ec2471 solid 2px",
+              border: " #00b386 solid 2px",
             }}>{c}</span>
     
 
