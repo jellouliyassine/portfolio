@@ -92,7 +92,7 @@ function HomeV2() {
               border: " #00b386  solid 1px",
             }}
             onClick={() => {
-              open("https://github.com/yassinejellouli");
+              open("https://github.com/jellouliyassine");
             }}
           >
             <div>
