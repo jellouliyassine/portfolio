@@ -222,33 +222,33 @@ function HomeV2() {
             <ul style={{display:"flex","flex-direction":"column",alignItems:"flex-start"}} >
               <li>
                 <span style={{ color: " #00b386 " }}>Programming :</span>{" "}
-                javaEE,Java,HTML,CSS,PL/SQL,SQL,JavaScript.
+                javaEE,Java,HTML,CSS,PL/SQL,SQL,JavaScript,C#.
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Databases</span> MySQL , MongoDB ,
+                <span style={{ color: " #00b386 " }}>Databases :</span> MySQL , MongoDB ,
                 Oracle.
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Frameworks</span> Spring
-                Boot,Spring Security,Spring,React JS,Junit
+                <span style={{ color: " #00b386 " }}>Frameworks :</span> Spring
+                Boot,Spring Security,Spring,React JS,Angular,.Net,Junit
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Networks</span>{" "}
+                <span style={{ color: " #00b386 " }}>Networks :</span>{" "}
                 Protocol,configuration des appareille CISCO,administration
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>DevOps </span> Git,Jenkins
+                <span style={{ color: " #00b386 " }}>DevOps :</span> Git,Jenkins
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Other Tools</span>{" "}
+                <span style={{ color: " #00b386 " }}>Other Tools :</span>{" "}
                 OrangeBI,TalendETL,Linux{" "}
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Methodologies</span> Scrum , IHM
+                <span style={{ color: " #00b386 " }}>Methodologies :</span> Scrum , IHM
                 (InterfaceHomme‑Machine) , DesignPatterns
               </li>
               <li>
-                <span style={{ color: " #00b386 " }}>Languages</span> Arabic ( 
+                <span style={{ color: " #00b386 " }}>Languages :</span> Arabic ( 
                 <FaStar style={{ marginLeft: "3px", color: " #00b386 " }} />
                   <FaStar style={{ marginLeft: "3px", color: " #00b386 " }} />
                   <FaStar style={{ marginLeft: "3px", color: " #00b386 " }} />
