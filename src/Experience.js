@@ -20,7 +20,7 @@ function Experience() {
 <div className="school">
   
 <Miniexperience content={[{year:"2017 - 2018 ",evnt:"First year of Mathematics and Science"},{year:"2018 - 2019 ",evnt:"Second year of Mathematics and Science B."}]}
-      title="Omar Ibn Khattab High School Meknes"
+      title="Omar Ibn Khattab High School"
       img={mks} />
 
 
