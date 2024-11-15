@@ -17,6 +17,8 @@ import Header from "./Head";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import HomeV2 from "./HomeV2";
+import HomeV3 from "./HomeV3";
+import Header2 from "./Header2";
 
 function App() {
   function open(url) {
@@ -40,13 +42,15 @@ function App() {
 }, []);
 console.log("refreched");
   return (
-      <div className="container">
-        <Header />
-
+      <div>
+      {  //<Header />
+      }
+        <Header2 />
         <Routes>
           {/* Define a route for the Home component */}
          { //<Route path="/homev2" element={<HomeV2/>} />
          }
+         <Route path="/portfolio2" element={<HomeV3 />} />
           <Route path="/portfolio" element={<HomeV2 />} />
           <Route path="/" element={<HomeV2 />} />
           <Route path="/Experience" element={<Experience />} />

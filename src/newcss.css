@@ -1,0 +1,32 @@
+.chitchat{
+    border:solid 1px white;
+    padding:9px;
+    cursor:pointer;
+    border-radius:8px;
+}
+.headerbtn{
+
+}
+.chitchat:hover{
+    background-color: white;
+    color: black;
+}
+.morebt{
+    font-size:2rem;
+    color:white;
+   background-image: url("fxp0.gif");
+    border:1px solid white;
+    padding:7px;
+    border-radius:10px;
+    cursor:pointer
+}
+.iicon{
+cursor: pointer;
+}
+.iicon:hover{
+}
+.headerbtn:hover{
+border:solid 1px white ;
+padding: 9px;
+border-radius: 10px;
+}

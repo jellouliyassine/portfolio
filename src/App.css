@@ -101,6 +101,11 @@ body{
   overflow: auto; /* Enable scrolling */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
+   background-image: url("colorbc.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
 }
 body::-webkit-scrollbar {
  width: none;
