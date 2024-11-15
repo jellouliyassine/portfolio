@@ -19,6 +19,7 @@ import Projects from "./Projects";
 import HomeV2 from "./HomeV2";
 import HomeV3 from "./HomeV3";
 import Header2 from "./Header2";
+import Header2andriod from "./Header2andriod";
 
 function App() {
   function open(url) {
@@ -45,7 +46,9 @@ console.log("refreched");
       <div>
       {  //<Header />
       }
-        <Header2 />
+              {(window.innerWidth < 768)?<Header2andriod />: <Header2 />}
+
+       
         <Routes>
           {/* Define a route for the Home component */}
          { //<Route path="/homev2" element={<HomeV2/>} />

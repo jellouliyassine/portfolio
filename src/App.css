@@ -103,7 +103,7 @@ body{
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
    background-image: url("colorbc.jpg");
    background-size: cover;
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-position: center;
    height: 100vh;
 }

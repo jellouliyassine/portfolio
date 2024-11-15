@@ -3,7 +3,7 @@ import { BsBorderTop, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
 import "./newcss.css"
-function Header2(){
+function Header2andriod(){
     return(<div style={{ marginBottom:"5px",alignItems:"center",fontSize:"1.3rem",padding:"10px",color:"white",display:"flex",backgroundColor:"transparent",justifyContent:"flex-end",gap:"30px"}}>
 <span style={{cursor:"pointer"}} className="headerbtn">Home</span>
 <span style={{cursor:"pointer"}} className="headerbtn">Skills</span>
@@ -16,4 +16,4 @@ function Header2(){
 <span className="chitchat" >ChitChat</span>
     </div>);
 }
-export  default Header2;
+export  default Header2andriod;
