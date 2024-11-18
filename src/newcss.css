@@ -60,8 +60,7 @@ border-radius: 10px;
 
 .backSkills{
     border-radius: 10px;
-    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
-    animation: 1s spin linear infinite;
+background-color: white;
     padding: 1px;
 
 
@@ -91,7 +90,7 @@ height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     
    background-color: rgb(26, 25, 25);
     color:white;
