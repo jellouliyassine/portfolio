@@ -53,8 +53,8 @@ console.log("refreched");
          { //<Route path="/homev2" element={<HomeV2/>} />
          }
          <Route path="/portfolio2" element={<Everything />} />
-          <Route path="/portfolio" element={<HomeV2 />} />
-          <Route path="/" element={<HomeV2 />} />
+          <Route path="/portfolio" element={<Everything />} />
+          <Route path="/" element={<Everything />} />
           <Route path="/Experience" element={<Experience />} />
           <Route path="/Project" element={<Projects />} />
         </Routes>
