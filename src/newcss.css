@@ -33,13 +33,15 @@
     border-radius:10px;
     cursor:pointer
 }
+
 .iicon{
 cursor: pointer;
 }
 .iicon:hover{
 }
 .headerbtn:hover{
-border:solid 1px white ;
+background-color: white;
+color: rgb(26, 25, 25);
 padding: 9px;
 border-radius: 10px;
 }
@@ -55,6 +57,52 @@ border-radius: 10px;
     max-width: 310px;
     min-height: 400px;
 }
+
+.backSkills{
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
+    animation: 1s spin linear infinite;
+    padding: 1px;
+
+
+}
+.Miniexperiencev2{
+    border: #d8d8d8 solid 1px;
+    border-radius: 10px;
+  margin: 10px;
+height: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  background-color: rgb(26, 25, 25);
+  }
+.colore{
+    text-align: center;
+    font-size: 3rem;
+ 
+    color: white;
+    font-weight: bolder;
+ 
+
+    font-weight: 700;
+  
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+   background-color: rgb(26, 25, 25);
+    color:white;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 10px;
+
+   
+}
+
+
 .logo{
     margin-bottom: "8px";
     color:rgb(224, 223, 223);
@@ -67,12 +115,38 @@ border-radius: 10px;
     initial-value:0deg;
     inherits: false;
 }
+.Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color:white;
+
+   
+
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
 .backcard{
     padding: 4px;
     background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
     animation: 1s spin linear infinite;
     padding: 1px;
     border-radius: 20px;
+}
+.backhead{
+    width: 100%;
+    padding-bottom: 1px;
+    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
+    animation: 1s spin linear infinite;
+    position: "fixed";
+    z-index: 100;
+    
 }
 @keyframes spin{
     from {

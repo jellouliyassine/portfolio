@@ -19,7 +19,7 @@ import Projects from "./Projects";
 import HomeV2 from "./HomeV2";
 import HomeV3 from "./HomeV3";
 import Header2 from "./Header2";
-import Header2andriod from "./Header2andriod";
+import Everything from "./Everything";
 
 function App() {
   function open(url) {
@@ -46,14 +46,13 @@ console.log("refreched");
       <div>
       {  //<Header />
       }
-              {(window.innerWidth < 768)?<Header2andriod />: <Header2 />}
 
        
         <Routes>
           {/* Define a route for the Home component */}
          { //<Route path="/homev2" element={<HomeV2/>} />
          }
-         <Route path="/portfolio2" element={<HomeV3 />} />
+         <Route path="/portfolio2" element={<Everything />} />
           <Route path="/portfolio" element={<HomeV2 />} />
           <Route path="/" element={<HomeV2 />} />
           <Route path="/Experience" element={<Experience />} />

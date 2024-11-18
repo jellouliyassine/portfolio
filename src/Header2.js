@@ -2,18 +2,110 @@ import React from "react";
 import { BsBorderTop, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
-import "./newcss.css"
-function Header2(){
-    return(<div style={{ marginBottom:"5px",alignItems:"center",fontSize:"1.3rem",padding:"10px",color:"white",display:"flex",backgroundColor:"transparent",justifyContent:"flex-end",gap:"30px"}}>
-<span style={{cursor:"pointer"}} className="headerbtn">Home</span>
-<span style={{cursor:"pointer"}} className="headerbtn">Skills</span>
-<span style={{cursor:"pointer"}} className="headerbtn">Projects</span>
-<div  style={{alignItems:"center",color:"white",display:"flex",backgroundColor:"transparent",justifyContent:"center",gap:"5px"}}>
-<BsLinkedin size={30} className="iicon" />
-<FaGithubSquare size={35} className="iicon"/>
-<ImMail  size={32} className="iicon"/>
-</div>
-<span className="chitchat" >ChitChat</span>
-    </div>);
+import "./newcss.css";
+
+function Header2() {
+  function open(url) {
+    window.open(url, "_blank");
+  }
+  function openGmail() {
+    window.location.href = "mailto:yassine.jellouli.2001@gmail.com";
+  }
+  return (
+    <div  className="backhead">
+    <div
+      style={{
+        
+        alignItems: "center",
+        fontSize: "1.3rem",
+        padding: "10px",
+        color: "white",
+       
+        display: "flex",
+        backgroundColor: "rgb(26, 25, 25)",
+        justifyContent: window.innerWidth < 600 ? "center" : "flex-end",
+        gap: window.innerWidth < 600 ? "5px" : "30px",
+      }}
+    >
+      <span
+        style={{
+          cursor: "pointer",
+          border: window.innerWidth < 600 ? "solid 1px white" : "none",
+          padding: window.innerWidth < 600 ? "6px" : "none",
+          borderRadius: window.innerWidth < 600 ? "8px" : "none",
+        }}
+        className="headerbtn"
+      >
+        Home
+      </span>
+      <span
+        style={{
+          cursor: "pointer",
+          border: window.innerWidth < 600 ? "solid 1px white" : "none",
+          padding: window.innerWidth < 600 ? "6px" : "none",
+          borderRadius: window.innerWidth < 600 ? "8px" : "none",
+        }}
+        className="headerbtn"
+      >
+        Skills
+      </span>
+      <span
+        style={{
+          cursor: "pointer",
+          border: window.innerWidth < 600 ? "solid 1px white" : "none",
+          padding: window.innerWidth < 600 ? "6px" : "none",
+          borderRadius: window.innerWidth < 600 ? "8px" : "none",
+        }}
+        className="headerbtn"
+      >
+        Projects
+      </span>
+      <span
+        style={{
+          cursor: "pointer",
+          border: window.innerWidth < 600 ? "solid 1px white" : "none",
+          padding: window.innerWidth < 600 ? "6px" : "none",
+          borderRadius: window.innerWidth < 600 ? "8px" : "none",
+        }}
+        className="headerbtn"
+      >
+        Experience
+      </span>
+      <div
+        style={{
+          alignItems: "center",
+          color: "white",
+          display: "flex",
+          backgroundColor: "transparent",
+          justifyContent: "center",
+          gap: "5px",
+        }}
+      >
+        <BsLinkedin
+          size={30}
+          className="iicon"
+          onClick={() => {
+            open("https://www.linkedin.com/in/yassine-jellouli-8241b2299/");
+          }}
+        />
+        <FaGithubSquare
+          size={35}
+          className="iicon"
+          onClick={() => {
+            open("https://github.com/jellouliyassine");
+          }}
+        />
+        <ImMail
+          size={32}
+          className="iicon"
+          onClick={() => {
+            openGmail();
+          }}
+        />
+      </div>
+      
+    </div>
+    </div>
+  );
 }
-export  default Header2;
+export default Header2;
