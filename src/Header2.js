@@ -1,10 +1,15 @@
-import React from "react";
+import React,{ useRef } from "react";
 import { BsBorderTop, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
 import "./newcss.css";
 
-function Header2() {
+function Header2({hr,sr,er,pr}) {
+  const scrollToDiv = (reef) => {
+    if (reef.current) {
+      reef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   function open(url) {
     window.open(url, "_blank");
   }
@@ -35,7 +40,9 @@ function Header2() {
           borderRadius: window.innerWidth < 600 ? "8px" : "none",
         }}
         className="headerbtn"
+      onClick={()=>{scrollToDiv(hr);}}
       >
+      
         Home
       </span>
       <span
@@ -46,6 +53,7 @@ function Header2() {
           borderRadius: window.innerWidth < 600 ? "8px" : "none",
         }}
         className="headerbtn"
+        onClick={()=>{scrollToDiv(sr);}}
       >
         Skills
       </span>
@@ -57,6 +65,7 @@ function Header2() {
           borderRadius: window.innerWidth < 600 ? "8px" : "none",
         }}
         className="headerbtn"
+        onClick={()=>{scrollToDiv(pr);}}
       >
         Projects
       </span>
@@ -68,6 +77,7 @@ function Header2() {
           borderRadius: window.innerWidth < 600 ? "8px" : "none",
         }}
         className="headerbtn"
+        onClick={()=>{scrollToDiv(er);}}
       >
         Experience
       </span>
