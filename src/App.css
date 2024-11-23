@@ -101,11 +101,7 @@ body{
   overflow: auto; /* Enable scrolling */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
-   background-image: url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg"),url("colorbc.jpg");
-   background-size: cover;
-   background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-   background-position: top center, center center, bottom center;
-   background-attachment: fixed, fixed, fixed;
+
    height: 100%;
 }
 body::-webkit-scrollbar {
