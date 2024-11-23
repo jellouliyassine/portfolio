@@ -102,6 +102,7 @@ function HomeV3() {
           description="With a strong analytical mindset, I thrive on tackling complex challenges. I use my expertise in algorithms, system design, and efficient coding practices to devise creative and effective solutions for technical problems."
         />
       </div>
+      
     </div>
   );
 }

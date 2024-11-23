@@ -139,6 +139,14 @@ width: 100px;
     
     border-radius: 20px;
 }
+.backup{
+    box-sizing: border-box;
+
+    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
+    animation: 1s spin linear infinite;
+    border-radius: 8px;
+    padding: 1px;
+}
 .backhead{
     width: 100%;
     padding-bottom: 1px;

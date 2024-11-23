@@ -14,6 +14,7 @@ function Project2({content, title, img,txt}) {
             display: "flex",
             padding:"4px",
             width:"100%",
+            fontWeight:"600",
            justifyContent:"center",
            fontSize:"1.3rem"
           }}
