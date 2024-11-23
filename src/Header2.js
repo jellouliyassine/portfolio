@@ -25,6 +25,7 @@ function Header2({hr,sr,er,pr}) {
         fontSize: "1.3rem",
         padding: "10px",
         color: "white",
+        height:"30px",
        
         display: "flex",
         backgroundColor: "rgb(26, 25, 25)",

@@ -68,6 +68,7 @@ function HomeV3() {
       </div>
       <div
         style={{
+          boxSizing: "border-box",
           display: "flex",
           justifyContent: "center",
           gap: "10px",

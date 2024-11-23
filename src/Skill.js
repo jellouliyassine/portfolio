@@ -2,13 +2,15 @@ import React from "react";
 import "./newcss.css";
 import bc from "./o6i.gif";
 import { TbBackground } from "react-icons/tb";
-function Skill({ name,Description}) {
+function Skill({ name,logo: Logo ,color}) {
+  let s=window.innerWidth<600?30:40;
   return (
-<div className="backSkills">
+<div >
       <div className="skill" >
 
-<span  style={{color:"#71d9f8",fontSize:"1.3rem",textAlign:"center"}}>{name}</span>
-<span style={{fontSize:"1.1rem",textAlign:"center"}}>{Description}</span>
+      <Logo size={s} className="logo" color={color} style={{border:"none"}} />
+
+<span style={{fontSize:"1rem",fontWeight:"600",marginTop:"5px"}}>{name}</span>
       </div>
 </div>
   );

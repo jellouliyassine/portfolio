@@ -1,87 +1,77 @@
 import React from "react";
 
-function Miniexperience2({ year, title, localisation, description }) {
+function Miniexperience2({ year1,year2, title, localisation, description }) {
   const isMobile = window.innerWidth < 600;
 
   return (
     <div
       style={{
-        gap: "10px",
+        width: "100%",
+        height: "100%",
+        "box-sizing": "border-box",
         display: "flex",
         justifyContent: "center",
-        alignItems: "flex-start",
-        paddingLeft:isMobile?"10px":"100px",
-        paddingRight:isMobile?"10px":"100px",
-        maxWidth:"1000px"
-    
+        padding: "10px",
       }}
     >
+      
       <div
         style={{
-          fontSize: isMobile ? "1.2rem" : "2rem",
-          marginTop: isMobile ? "-5px" : "-11px",
-          width: "100%",
-
-          maxWidth: "fit-content",
-        
-        }}
-      >
-        {year}
-      </div>
-
-      <div
-        style={{
+          boxSizing: "border-box",
           display: "flex",
           alignItems: "center",
-          justifyContent:"space-between",
+          justifyContent: "flex-start",
           flexDirection: "column",
-          gap: "20px",
-          height: "100%",
-          minHeight: "100%",
-            boxSizing: "border-box",
+          gap: "8px",
+          padding:window.innerWidth>600?"10px":"7px",
+          paddingBottom: "0px",
+          boxSizing: "border-box",
         }}
       >
         <span
           style={{
-            width: "0.5rem",
-            height: "0.5rem",
+            boxSizing: "border-box",
+            width:window.innerWidth>600?"15px":"10px",
+            height:window.innerWidth>600?"15px":"10px",
             borderRadius: "100%",
             border: "white solid 5px",
-            boxShadow: "white 0px 1px 5px 4px",
+
             backgroundColor: "#8400c0",
             color: "#ffffff",
           }}
-        />
+        >
+        </span>
+
         <span
           style={{
-            display: "flex",
-            flexDirection:"column",
-            justifyContent:"flex-end",
-            minHeight: "200px",
+            boxSizing: "border-box",
+            height: "100%",
             boxSizing: "border-box",
             backgroundColor: "#ffffff",
             color: "#ffffff",
             width: "4px",
           }}
-        >
-          .
-        </span>
+        ></span>
       </div>
 
       <div
         style={{
+          boxSizing: "border-box",
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "flex-start",
           flexDirection: "column",
           gap: "4px",
-          marginTop: "-11px",
-          
         }}
       >
-        <span style={{ fontSize: isMobile ? "1.6rem" : "2rem" }}>{title}</span>
-        <span style={{ fontSize: isMobile ? "1.2rem" : "1.5rem" }}>{localisation}</span>
-        <span style={{ fontSize: isMobile ? "1rem" : "1.2rem" }}>{description}</span>
+        <span style={{ fontSize: isMobile ? "1.3rem" : "1.6rem" }}>{title} </span>
+        <span style={{fontSize: isMobile ? "1rem" : "1.2rem" ,padding:"2px",backgroundColor:"#484848",borderRadius:"4px"}}>{year1} to {year2}</span>
+        <span style={{ fontSize: isMobile ? "1.2rem" : "1.5rem" }}>
+          {localisation}
+        </span>
+        <span style={{ fontSize: isMobile ? "1rem" : "1.2rem","text-align": "justify" }}>
+          {description}
+        </span>
       </div>
     </div>
   );

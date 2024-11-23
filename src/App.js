@@ -20,6 +20,7 @@ import HomeV2 from "./HomeV2";
 import HomeV3 from "./HomeV3";
 import Header2 from "./Header2";
 import Everything from "./Everything";
+import ParticlesComponent from "./particles";
 
 function App() {
   function open(url) {
@@ -44,6 +45,7 @@ function App() {
 console.log("refreched");
   return (
       <div>
+        <ParticlesComponent id="particles"/>
       {  //<Header />
       }
 

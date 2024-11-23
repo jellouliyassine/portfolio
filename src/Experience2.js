@@ -26,12 +26,12 @@ function Experience2() {
             width:"100%"
           }}
         >
-          <span className="colore" style={{padding: "10px",}} > Experience</span>
+          <span className="colore" style={{padding: "10px"}} > Experience</span>
         </div>
         <div
           style={{
             display: "flex",
-           marginTop:"60px",
+           marginTop:"50px",
             justifyContent: "center",
             alignItems:"center",
             flexDirection:"column",
@@ -42,11 +42,11 @@ function Experience2() {
 
           }}
         >
-        <Miniexperience2 year="2024" title="Full stack engineer" localisation="Vai Systems" description="Currently, I work as a full-stack engineer, where I am responsible for architecting solutions, building robust backend systems, and developing and training AI models. My role combines technical expertise in both software development and machine learning, allowing me to create scalable and efficient systems while incorporating advanced AI capabilities. I focus on delivering high-quality solutions that meet business needs and ensure smooth integration between different layers of the application."/>
-        <Miniexperience2 year="2024" title="Graduated as software engineer" localisation="Ensa tanger" description="As a software engineering student, I built a solid foundation in computer science, learning key concepts like algorithms, data structures, and programming principles. During this time, I developed strong problem-solving abilities and gained a deep understanding of the fundamentals that drive modern technology. This experience laid the groundwork for my passion for software development and shaped my approach as a software engineer today."/>
-        <Miniexperience2 year="2024" title="Internship for My Final Year Project" localisation="DXC Technology" description="Design and development of a project management application based on the Scrum framework, supporting projects throughout the value creation process, with analytical views that facilitate analysis and report generation for project managers, dedicated to DXC Technology Maroc."/>
-        <Miniexperience2 year="2023" title="Internship for Practicing and Applying My Knowledge" localisation="Meknes Prefecture" description="I developed a C# and .NET desktop application for configuring Cisco switches at the Prefecture. The app provided a user-friendly interface for network administrators to easily manage settings, automating tasks and improving network efficiency. This project enhanced my understanding of network protocols and their real-world application."/>
-        <Miniexperience2 year="2021" title="Internship for learning basics" localisation="Vamos Digital" description="During my internship at Vamos Digital, I focused on learning the basics of software development while creating a portfolio for the company. I gained hands-on experience in web development, helping to design and implement a professional portfolio that showcased the company's services and projects. This opportunity allowed me to strengthen my skills in web development and collaboration."/>
+        <Miniexperience2 year1="10/12/24" year2="now" title="Full stack engineer" localisation="VaiSystems" description="Currently, I work as a full-stack engineer, where I am responsible for architecting solutions, building robust backend systems, and developing and training AI models. My role combines technical expertise in both software development and machine learning, allowing me to create scalable and efficient systems while incorporating advanced AI capabilities. I focus on delivering high-quality solutions that meet business needs and ensure smooth integration between different layers of the application."/>
+        <Miniexperience2 year1="07/12/24" year2="11/23/24" title="Freelance project" localisation="Meknes" description="I led a freelance project focused on digital transformation for magazine companies, where I designed and implemented a tailored solution to fully digitize and optimize their workflows. This project streamlined their operations, improved efficiency, and supported their transition to modern digital systems."/>
+        <Miniexperience2 year1="02/15/24" year2="09/14/24" title="Internship : Final Year Project" localisation="DXC Technology" description="Design and development of a project management application based on the Scrum framework, supporting projects throughout the value creation process, with analytical views that facilitate analysis and report generation for project managers, dedicated to DXC Technology Maroc."/>
+        <Miniexperience2 year1="06/4/23" year2="09/12/23" title="Internship : Practicing  Knowledge" localisation="Meknes Prefecture" description="I developed a C# and .NET desktop application for configuring Cisco switches at the Prefecture. The app provided a user-friendly interface for network administrators to easily manage settings, automating tasks and improving network efficiency. This project enhanced my understanding of network protocols and their real-world application."/>
+        <Miniexperience2 year1="06/14/22" year2="07/15/22" title="Internship : learning basics" localisation="Vamos Digital" description="During my internship at Vamos Digital, I focused on learning the basics of software development while creating a portfolio for the company. I gained hands-on experience in web development, helping to design and implement a professional portfolio that showcased the company's services and projects. This opportunity allowed me to strengthen my skills in web development and collaboration."/>
 
         </div>
        

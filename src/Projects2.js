@@ -21,7 +21,7 @@ import image from "./image.png"
 
 function Projects2() {
   return (
-    <div style={{ marginTop: "40px" }}>
+    <div style={{ marginTop: "50px" }}>
       <div className="projects">
         <div
           style={{
@@ -40,7 +40,7 @@ function Projects2() {
         <div
           style={{
             display: "flex",
-            marginTop: "20px",
+            marginTop: "50px",
 
             justifyContent: "center",
 
@@ -71,7 +71,7 @@ function Projects2() {
             <Project2
               content={["Java", "Problem Solving", "Graph theory"]}
               txt="Implementing a solution for the Tables-Infinite-Qube  puzzle using Java and graph theory "
-              title="tables-infinite-qube-problem-solving"
+              title="Infinite Qube Problem Solving Mini Game"
               img={qube}
             />
           </div>
@@ -102,7 +102,7 @@ Technology Morocco"
             <Project2
               content={["Java", "MSP"]}
               txt="Using the Statistical Process Control (SPC) method to create a console program that automatically retrieves the optimal coordinates of a given function that describes a process, for minimizing or maximizing the function value."
-              title="MSP_Planification_Optimum"
+              title="MSP Optimum Finder"
               img={msp}
             />
           </div>
@@ -111,7 +111,7 @@ Technology Morocco"
               content={["Java", "MySQL", "XML", "Swing", "OpenCV"]}
               txt="Retrieve satellite images with a specified scale, apply filters, extract elements, and then map optimal routes and
 paths"
-              title="Roadmap-Segmentation-and-Extraction-from-Satellite-Images"
+              title="Roadmap Segmentation and Extraction"
               img={traitement}
             />
           </div>
@@ -121,7 +121,7 @@ paths"
               content={[".Net", "C#", "Network protocols"]}
               txt=" Developed a desktop application using C# and the .NET framework for configuring
 Cisco switches used by the prefecture."
-              title="switch_cnfig"
+              title="Cisco Switch Configurator"
               img={cisco}
             />
           </div>
@@ -130,7 +130,7 @@ Cisco switches used by the prefecture."
             <Project2
               content={["Java", "Problem Solving", "Graph theory"]}
               txt="Implementing a solution for the TIC_TAC_TOE puzzle using Java and graph theory"
-              title="TIC_TAC_TOE"
+              title="TIC TAC TOE"
               img={tictac}
             />
           </div>
