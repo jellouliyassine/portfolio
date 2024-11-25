@@ -31,6 +31,9 @@ import { SiJunit5 } from "react-icons/si";
 import { SiApachemaven } from "react-icons/si";
 import { RiDrinks2Fill } from "react-icons/ri";
 import { IoLanguage } from "react-icons/io5";
+import { FaPython } from "react-icons/fa6";
+import { SiJira } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 //import images
 
 import java from "./Java.png";
@@ -69,6 +72,7 @@ function Skills2() {
           <Skill name="CSS" logo={IoLogoCss3} color="#36acff" />
           <Skill name="JavaScript" logo={RiJavascriptFill} color="yellow" />
           <Skill name="C#" logo={SiCsharp} color="#366eff" />
+          <Skill name="Python" logo={FaPython} color="orange" />
           <Skill name="MySQL" logo={SiMysql} color="#ffa936" />
           <Skill name="Oracle" logo={SiOracle} color="orange" />
           <Skill name="MongoDB" logo={SiMongodb} color="green" />
@@ -85,9 +89,10 @@ function Skills2() {
           <Skill name="Junit" logo={SiJunit5} color="#00d712" />
           <Skill name="Maven" logo={SiApachemaven} color="#fdcd00" />
           <Skill name="Mockito" logo={RiDrinks2Fill} color="#00fd70"/>
-          <Skill name="Arabic" logo={IoLanguage} color="#207fff"/>
-          <Skill name="English" logo={IoLanguage} color="#207fff" />
-          <Skill name="French" logo={IoLanguage} color="#207fff" />
+          <Skill name="Jira" logo={SiJira} color="#207fff"/>
+          <Skill name="Github" logo={FaGithub} color="#ffb033" />
+
+          
         </div>
       </div>
     </div>

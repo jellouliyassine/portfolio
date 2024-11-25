@@ -52,10 +52,9 @@ function HomeV3() {
             style={{
               color: "#c1c0c0",
               "margin-bottom": "20px",
-              fontSize: "20px",
             }}
           >
-            <p style={{ color: "white", fontSize: "1.4rem" }}>
+            <p style={{ color: "white", fontSize: "1.4rem",textAlign:"left","word-break": "break-all" }}>
               A Software Engineer with a strong focus on creating value, adept
               at designing innovative solutions and resolving complex problems.
               Equipped with a critical mindset, I excel at analyzing challenges

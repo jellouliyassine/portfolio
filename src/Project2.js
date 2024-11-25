@@ -2,79 +2,78 @@ import logo from "./me.jpg";
 import cool from "./cool.png";
 import "./App.css";
 import "./newcss.css";
-
-function Project2({content, title, img,txt}) {
+import clickme from "./clickme.gif";
+import { useState } from "react";
+function Project2({ content, title, img, thecnologie, type }) {
+  const [click,setclick]= useState(false);
   return (
-    
-    <div className="Miniexperiencev2">
-        <span
-   
+    <div
+      className="Miniexperiencev2"
+      style={{
+        backgroundImage: `url(${img})`,
+        backgroundSize: "cover", // Adjusts the background image to cover the entire div
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "350px",
+        width: "350px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        cursor: "pointer"
+      }}
+      onClick={()=>{setclick(!click)}}
+    >
+      {click ? (
+        <div
           style={{
-            color:"white",
+            height: "100%",
+            borderRadius: "8px",
+            backgroundColor: "rgba(39, 39, 39,0.8)",
+            padding: "8px",
+ 
+            color: "white",
             display: "flex",
-            padding:"4px",
-            width:"100%",
-            fontWeight:"600",
-           justifyContent:"center",
-           fontSize:"1.3rem"
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
           }}
         >
-          {title}
-        </span>
-      <div
-        style={{
-          display: "flex",
-          "align-items": "flex-start",
-          justifyContent: "center",
-          color: "#fff",
-          "text-shadow": "0 0 2px #fff",
-
-          border: "white solid 1px",
-
-          backgroundImage: `url(${img})`,
-          backgroundSize: "cover", // Adjusts the background image to cover the entire div
-          backgroundPosition: "center", // Centers the background image
-          height: "200px", // Example height, adjust as needed
-           // Example width, adjust as needed
-        }}
-      >
-      
-      </div>
-      <span
-          style={{
-        
-            display: "flex",
-            padding:"8px",
-           justifyContent:"center",
-           color:"#fff8fb ",
-          }}
-        >
-          {txt}
-        </span>
-      <div>
-        <br></br>
-        <div style={{ color: " #d8d8d8",display: "flex",
-            
-           justifyContent:"flex-start",flexWrap:"wrap"}}>
-        {content.map((c, index) => (
-
-<span  style={{
-             textAlign:"center",
-             margin:"3px",
-             padding:"6px",
-              borderRadius: "10px",
-              "background-color": "transparent",
-              border: " #d8d8d8 solid 1px",
-            }}>{c}</span>
-    
-
-
-))}
-
-         
+          <ul
+            style={{
+              padding: 0,
+              margin: 0,
+              height: "fit-content",
+              listStylePosition: "inside",
+              justifyContent: "left",
+              fontSize: window.innerWidth < 600 ? "100px" : "14px",
+              "line-height": window.innerWidth < 600 ? "2" : "2",
+            }}
+          >
+            <li>
+              <b>Type</b> : {type}
+            </li>
+            <li>
+              <b>Technologies</b> : {thecnologie}
+            </li>
+            {content.map((c, index) => (
+              <li>{c}</li>
+            ))}
+          </ul>
         </div>
-        <br></br>
-      </div>
+      ) : (
+        <div
+        
+        style={{ backgroundImage: `url(${clickme})`,
+        backgroundSize: "cover", // Adjusts the background image to cover the entire div
+        backgroundPosition: "center",
+        opacity: 0.8,filter: "invert(100%)",
+        backgroundRepeat: "no-repeat",
+
+      width:"20%",height:"20%"}}
+        >
+
+        </div>
+      )}
     </div>
   );
 }

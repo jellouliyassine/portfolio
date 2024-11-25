@@ -54,7 +54,7 @@ border-radius: 10px;
     border-radius: 20px;
     min-width:228px;
     max-width: 310px;
-    min-height: 400px;
+    min-height: 412px;
 }
 
 .backSkills{
@@ -65,13 +65,10 @@ background-color: white;
 
 }
 .Miniexperiencev2{
-    border: #d8d8d8 solid 1px;
+   
     border-radius: 10px;
   margin: 10px;
-height: 100%;
-  max-width: 400px;
-  min-width: 200px;
-  background-color: rgb(26, 25, 25);
+ 
   }
 .colore{
     text-align: center;

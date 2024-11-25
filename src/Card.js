@@ -10,7 +10,7 @@ function Card({ name,logo: Logo ,description}) {
 <Logo size={100} className="logo" />
 
 <span style={{fontSize:"1.4rem",fontWeight:"600",marginTop:"20px"}}>{name}</span>
-<span style={{fontSize:"1rem",width:"100%",marginTop:"20px",padding:"4px","text-align": "justify","overflow-wrap": "break-word" }}>{description}</span>
+<span style={{fontSize:"1rem",width:"100%",marginTop:"20px",padding:"4px","text-align": "justify","overflow-wrap": "break-word","line-height": "1.5" }}>{description}</span>
       </div>
     </div>
   );

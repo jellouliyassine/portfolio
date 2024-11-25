@@ -32,7 +32,7 @@ function Everything() {
       </div>
 
       {/* Spacer to avoid content overlap */}
-      <div style={{ marginTop: "100px" }}></div>
+      <div style={{ marginTop: "10px" }}></div>
 
       {/* Main Content */}
       <div style={{ flex: 1 }}>

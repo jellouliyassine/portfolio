@@ -7,17 +7,17 @@ import ensa from "./ensa.jpg";
 import vamos from "./vamos.jpg";
 import pref from "./pref.jpg";
 import dxc from "./dxc.jpg";
-import wer from "./wer.png";
-import qube from "./qube.jpg";
-import ddxc from "./ddxc.png";
+import wer from "./wherhouse.jpg";
+import qube from "./qube.png";
+import ddxc from "./scrum.jpg";
 import msp from "./msp.png";
-import traitement from "./traitement.png";
+import traitement from "./processing.jpg";
 import cisco from "./cisco.jpg";
-import tictac from "./tictac.png";
+import tictac from "./tic-tac-toe.png";
 import { BsArrowReturnRight } from "react-icons/bs";
 import Project from "./Project";
 import Project2 from "./Project2";
-import image from "./image.png"
+import image from "./tf.jpg";
 
 function Projects2() {
   return (
@@ -26,7 +26,7 @@ function Projects2() {
         <div
           style={{
             textAlign: "center",
-        
+
             fontSize: "3rem",
 
             width: "100%",
@@ -50,102 +50,193 @@ function Projects2() {
           }}
         >
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              WearHouser
+            </div>
             <Project2
+              thecnologie=" Talend , Java , HTML , CSS , PL/SQL , SQL , JavaScript , Scrum"
+              type="Personal Challenge"
               content={[
-                "Talend",
-                "Java",
-                "HTML",
-                "CSS",
-                "PL/SQL",
-                "SQL",
-                "JavaScript",
-                "Scrum",
+                "Design  a web interface to load client data ",
+                "Use Talend  for data processing.",
+                "Automate the creation of data warehouses",
+                "Analytical views for streamlined business insights.",
               ]}
-              txt="Developed a project idea for a company dedicated to creating data warehouses"
-              title="WearHouser"
               img={wer}
             />
           </div>
 
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              Infinite Qube Problem Solving
+            </div>
             <Project2
-              content={["Java", "Problem Solving", "Graph theory"]}
-              txt="Implementing a solution for the Tables-Infinite-Qube  puzzle using Java and graph theory "
-              title="Infinite Qube Problem Solving Mini Game"
+              thecnologie="Java , Problem Solving , Graph theory"
+              type="Personal Challenge"
+              content={[
+                "Solution for the Tables-Infinite-Qube puzzle",
+                "Use graph theory to implement the solution.",
+              ]}
               img={qube}
             />
           </div>
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              Scrum Project Planing
+            </div>
             <Project2
+              thecnologie="Spring Boot ,Spring Security ,
+                Spring ,
+                React JS ,
+                Junit ,
+                java ,
+                JavaScript ,
+                MySQL ,
+                Jenkins ,
+                Scrum "
+              type="Internship"
               content={[
-                "Spring Boot",
-                "Spring Security",
-                "Spring",
-                "React JS",
-                "Junit",
-                "java",
-                "JavaScript",
-                "MySQL",
-                "Jenkins",
-                "Scrum",
+                "Build a project management application based on the Scrum framework.",
+                "Implement absence management system", " Implement real-time comment and notification systems", "Implement a calendar for event planning.",
+                "Implement analytical views and auto report generation for project lifecycle analysis.",
               ]}
-              txt=" Designed and developed a project management application based on the Scrum
-framework, supporting projects throughout the value creation process, with analytical
-views to facilitate analysis and report generation for project managers at DXC
-Technology Morocco"
-              title="Scrum Project Planing"
               img={ddxc}
             />
           </div>
 
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              MSP Optimum Finder
+            </div>
             <Project2
-              content={["Java", "MSP"]}
-              txt="Using the Statistical Process Control (SPC) method to create a console program that automatically retrieves the optimal coordinates of a given function that describes a process, for minimizing or maximizing the function value."
-              title="MSP Optimum Finder"
+              thecnologie="Java , MSP"
+              type="Personal Challenge"
+              content={[
+                "Develop a console application using the Statistical Process Control (SPC) method to optimize function coordinates for process improvement.",
+                "Implement the solution in Java, focusing on precision and mathematical optimization.",
+              ]}
               img={msp}
             />
           </div>
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              Roadmap Segmentation and Extraction
+            </div>
             <Project2
-              content={["Java", "MySQL", "XML", "Swing", "OpenCV"]}
-              txt="Retrieve satellite images with a specified scale, apply filters, extract elements, and then map optimal routes and
-paths"
-              title="Roadmap Segmentation and Extraction"
+              type="Personal Challenge"
+              thecnologie="Java , MySQL , XML , Swing , OpenCV"
+              content={[
+                "Retrieve satellite images with a specified scale and apply filters for feature extraction.",
+                "Map the optimal route and calculate the distance between two map points.",
+              ]}
               img={traitement}
             />
           </div>
 
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              Cisco Switch Configurator
+            </div>
             <Project2
-              content={[".Net", "C#", "Network protocols"]}
-              txt=" Developed a desktop application using C# and the .NET framework for configuring
-Cisco switches used by the prefecture."
-              title="Cisco Switch Configurator"
+              type="Internship"
+              thecnologie=".Net , C# , Network protocols"
+              content={[
+                "Create a desktop application to configure Cisco switches",
+                "Provide a streamlined solution for network management at the Government Institution Prefecture of meknes.",
+                "Accelerate the switch configuration process by approximately 200% compared to manual CLI usage.",
+              ]}
               img={cisco}
             />
           </div>
 
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              TIC TAC TOE
+            </div>
             <Project2
-              content={["Java", "Problem Solving", "Graph theory"]}
-              txt="Implementing a solution for the TIC_TAC_TOE puzzle using Java and graph theory"
-              title="TIC TAC TOE"
+              type="Personal Challenge"
+              thecnologie="Java , Problem Solving , Graph theory"
+              content={[
+                "Implement the Tic Tac Toe puzzle using Java, applying graph theory for intelligent move calculation and strategy.",
+                "Ensure that the computer always wins or draws by optimizing game logic and designing competitive play.",
+              ]}
               img={tictac}
             />
           </div>
 
           <div>
+            <div
+              style={{
+                textAlign: "center",
+                width: "100%",
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              Digital Transformation of Magazines
+            </div>
             <Project2
-              content={[".Net", "C#", "SQLite"]}
-              txt="Freelance project on digital transformation for magazine companies, involving the implementation of a solution to fully digitize and optimize their workflows."
-              title="Digital Transformation of Magazines"
+              type="Freelance"
+              thecnologie=".Net , C# , SQLite"
+              content={[
+                "Lead a freelance project focused on digitizing and optimizing workflows for magazine companies to enhance operational efficiency and streamline business processes.",
+                "Automating key operations and improving overall workflow management.",
+                "Incorporate features to track client orders, manage providers, automate profit calculations, and monitor payment operations, providing a seamless and efficient management system.",
+              ]}
               img={image}
             />
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
