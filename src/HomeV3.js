@@ -1,5 +1,5 @@
 import React from "react";
-import prf from "./prf.png";
+import prf from "./prf3.png";
 import Card from "./Card";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
