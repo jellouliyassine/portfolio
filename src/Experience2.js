@@ -63,7 +63,7 @@ function Experience2() {
             year1="10/12/24"
             year2="now"
             title="Full stack engineer"
-            localisation="VaiSystems"
+            localisation="DakiyLabs"
             description={[
               "Responsible for architecting solutions, building robust backend systems, and developing and training AI models",
               "Combine expertise in software development and machine learning to create scalable, efficient systems with advanced AI capabilities.",

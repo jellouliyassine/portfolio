@@ -1,10 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Miniexperience2({ year1, year2, title, localisation, description }) {
   const isMobile = window.innerWidth < 600;
 
   return (
-    <div
+    <motion.div 
+    initial={{ scale: 0 }}              // Start small
+    whileInView={{ scale: 1 }}           // Grow to normal when in view
+    transition={{ duration: 0.5 }}       // Smooth animation
+    viewport={{ once: false, amount: 0.5 }}  // Animate on scroll, when 50% visible
+
       style={{
         width: "fit-content",
         height: "100%",
@@ -92,7 +98,7 @@ maxWidth:"900px"
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -4,10 +4,16 @@ import "./App.css";
 import "./newcss.css";
 import clickme from "./clickme.gif";
 import { useState } from "react";
+import { motion } from "framer-motion";
 function Project2({ content, title, img, thecnologie, type }) {
   const [click,setclick]= useState(false);
   return (
-    <div
+    <motion.div 
+    initial={{ scale: 0 }}              // Start small
+    whileInView={{ scale: 1 }}           // Grow to normal when in view
+    transition={{ duration: 0.5 }}       // Smooth animation
+    viewport={{ once: false, amount: 0.5 }}  // Animate on scroll, when 50% visible
+
       className="Miniexperiencev2"
       style={{
         backgroundImage: `url(${img})`,
@@ -74,7 +80,7 @@ function Project2({ content, title, img, thecnologie, type }) {
 
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
 

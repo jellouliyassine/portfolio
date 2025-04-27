@@ -8,9 +8,13 @@ import { VscDebugConsole } from "react-icons/vsc";
 import { BsPuzzleFill } from "react-icons/bs";
 import { FaBrain } from "react-icons/fa";
 import Skills2 from "./Skills2";
+import { motion } from "framer-motion";
+
 function HomeV3() {
   return (
-    <div style={{ display: "flex", flexDirection: "column",width:"100vw" }}>
+    <div
+           // Animate when in view
+    style={{ display: "flex", flexDirection: "column",width:"100vw" }}>
       <div
         className="item"
         style={{
@@ -36,7 +40,13 @@ function HomeV3() {
           src={prf}
         />
 
-        <div style={{paddingLeft:"5%",textAlign:window.innerWidth < 600 ? "none" :"center",paddingRight:"5%",display:"flex",height:"fit-content",justifyContent:"center",alignItems:"center",flexDirection:"column" }}>
+        <motion.div 
+            initial={{ scale: 0 }}              // Start small
+            whileInView={{ scale: 1 }}           // Grow to normal when in view
+            transition={{ duration: 0.5 }}       // Smooth animation
+            viewport={{ once: false, amount: 0.5 }}  // Animate on scroll, when 50% visible
+        
+        style={{paddingLeft:"5%",textAlign:window.innerWidth < 600 ? "none" :"center",paddingRight:"5%",display:"flex",height:"fit-content",justifyContent:"center",alignItems:"center",flexDirection:"column" }}>
           <div
             className="gradient-textv2"
             style={{
@@ -63,7 +73,7 @@ function HomeV3() {
             </p>
           </div>
           
-        </div>
+        </motion.div>
       </div>
       <div
         style={{
