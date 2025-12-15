@@ -28,13 +28,11 @@ function Experience2() {
         <div
           style={{
             textAlign: "center",
-            fontSize: "3rem",
 
             width: "100%",
           }}
         >
-          <span className="colore" style={{ padding: "10px" }}>
-            {" "}
+        <span style={{ fontSize: "clamp(23px, 4vw, 32px)", padding: "10px", backgroundColor: "#FF4D00", color: "rgba(255,255,255,0.8)", borderRadius: "10px", fontFamily: '"JetBrains Mono", monospace', color: "white", fontWeight: "bold", borderRadius: "5px" }}>
             Experience
           </span>
         </div>
@@ -65,7 +63,7 @@ function Experience2() {
             title="Full stack engineer"
             localisation="DakiyLabs"
             description={[
-              "Responsible for architecting solutions, building robust backend systems, and developing and training AI models",
+              "Responsible for concepting solutions, building robust backend systems, and developing and training AI models",
               "Combine expertise in software development and machine learning to create scalable, efficient systems with advanced AI capabilities.",
               "Focus on delivering high-quality solutions that meet business needs and ensure seamless integration between application layers.",
             ]}

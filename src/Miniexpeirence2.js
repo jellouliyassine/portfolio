@@ -18,7 +18,8 @@ function Miniexperience2({ year1, year2, title, localisation, description }) {
         display: "flex",
         justifyContent: "flex-start",
         padding: "10px",
-maxWidth:"900px"
+maxWidth:"900px",
+color:"rgba(255,255,255,0.8)"
       }}
     >
       <div
@@ -40,10 +41,10 @@ maxWidth:"900px"
             width: window.innerWidth > 600 ? "15px" : "10px",
             height: window.innerWidth > 600 ? "15px" : "10px",
             borderRadius: "100%",
-            border: "white solid 5px",
+            border: "#FF4D00 solid 5px",
 
-            backgroundColor: "#8400c0",
-            color: "#ffffff",
+            backgroundColor: "white",
+            color: "#FF4D00",
           }}
         ></span>
 
@@ -52,8 +53,8 @@ maxWidth:"900px"
             boxSizing: "border-box",
             height: "100%",
             boxSizing: "border-box",
-            backgroundColor: "#ffffff",
-            color: "#ffffff",
+            backgroundColor: "#FF4D00",
+            color: "#FF4D00",
             width: "4px",
           }}
         ></span>
@@ -69,20 +70,20 @@ maxWidth:"900px"
           gap: "4px",
         }}
       >
-        <span style={{ fontSize: isMobile ? "1.3rem" : "1.6rem" }}>
+        <span style={{ fontSize: isMobile ? "1.3rem" : "1.6rem",backgroundColor:"#FF4D00",padding:"5px",boxSizing:"border-box",borderRadius:"5px" }}>
           {title}{" "}
         </span>
         <span
           style={{
             fontSize: isMobile ? "1rem" : "1.2rem",
             padding: "2px",
-            backgroundColor: "#484848",
+            backgroundColor: "#FF5938",
             borderRadius: "4px",
           }}
         >
           {year1} to {year2}
         </span>
-        <span style={{ fontSize: isMobile ? "1.2rem" : "1.5rem" }}>
+        <span style={{ fontSize: isMobile ? "0.9rem" : "1.1rem",backgroundColor:"#FF755C",padding:"5px",boxSizing:"border-box",borderRadius:"5px" }}>
           {localisation}
         </span>
         <div

@@ -5,21 +5,24 @@
     border-radius:8px;
 }
 .headerbtn{
-
+font-weight: bold;
+font-size:clamp(14px, 4vw, 25px);
+font-family: "JetBrains Mono", monospace;
+padding: 5px;
+border-radius: 5px;
+/* color: #FF6E52; */
 }
 .item{
 
 }
 @media (max-width:600px) {
 
-  .card{
-    max-height: 50px;
-  }
+
 }
 
   
 .chitchat:hover{
-    background-color: white;
+    background-color: rgb(44, 44, 44);
     color: black;
 }
 .morebt{
@@ -34,27 +37,33 @@
 
 .iicon{
 cursor: pointer;
+backdrop-filter: blur(18px);
+padding: 10px;
+border-radius: 5px;
+border: 1px solid rgba(255,255,255,0.2);
 }
 .iicon:hover{
+    border: solid 1px white; 
 }
 .headerbtn:hover{
-background-color: white;
-color: rgb(26, 25, 25);
-padding: 9px;
-border-radius: 10px;
+
+color:#d6d6d6;
 }
 .card{
     
     display: flex;
     flex-direction: column;
     align-items: center;
-   background-color: rgb(26, 25, 25);
-    color:white;
+   backdrop-filter: blur(18px);
+    border: solid 1px #FF6E52;
+    color:rgb(223, 223, 223);
     padding: 20px;
     border-radius: 20px;
     min-width:228px;
     max-width: 310px;
-    min-height: 412px;
+    height: 450px;
+
+    background-color: transparent;
 }
 
 .backSkills{
@@ -88,8 +97,10 @@ background-color: white;
     align-items: center;
     gap: 5px;
     
-   background-color: rgb(26, 25, 25);
-    color:white;
+   /* backdrop-filter: blur(18px); */
+   background-color: rgb(22, 22, 22);
+   border: 1px solid rgba(235, 235, 235, 0.479);
+    color:rgba(255, 255, 255, 0.76);
     padding: 10px;
 width: 100px;
     border-radius: 10px;
@@ -100,8 +111,8 @@ width: 100px;
 
 .logo{
     margin-bottom: "8px";
-    color:rgb(224, 223, 223);
-    border:solid white 3px;
+    color:rgb(255, 94, 0);
+    border:solid rgb(255, 94, 0) 3px;
     padding: 5px;
     border-radius: 100%;
 }
@@ -111,35 +122,55 @@ width: 100px;
     inherits: false;
 }
 .Skills{
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 100px;                 /* Full viewport height */
 
-    color:white;
+
 
    
-
 }
-.projects{
+
+.Domains{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+gap: 100px;
+
+    padding: 20px;
+
+}
+
+
+
+.projects{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
   
 }
 
 .backcard{
     box-sizing: border-box;
+    background-color: #161616;
 
-    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
-    animation: 1s spin linear infinite;
+    /* background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff); */
+    /* animation: 1s spin linear infinite; */
     padding: 1px;
-    
     border-radius: 20px;
 }
 .backup{
     box-sizing: border-box;
-
-    background-image: conic-gradient(from var(--angle) , #00FFFF, #FF00FF, #6e14ff, #ff00ff);
+background-color: #FF6E52;
     animation: 1s spin linear infinite;
     border-radius: 8px;
     padding: 1px;

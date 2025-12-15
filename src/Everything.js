@@ -5,6 +5,7 @@ import Up from "./goup";
 import Skills2 from "./Skills2";
 import Projects2 from "./Projects2";
 import Experience2 from "./Experience2";
+import Domains from "./Domains";
 
 function Everything() {
   const HomeRef = useRef(null);
@@ -21,8 +22,9 @@ function Everything() {
         position: "relative",
       }}
     >
+
       {/* Header */}
-      <div style={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}>
+      <div style={{ position: "fixed", top: 0, width: "100%", zIndex: 10,boxSizing:"border-box" }}>
         <Header2
           hr={HomeRef}
           sr={SkillRef}
@@ -32,36 +34,40 @@ function Everything() {
       </div>
 
       {/* Spacer to avoid content overlap */}
-      <div style={{ marginTop: "10px" }}></div>
+      <div style={{ }}></div>
 
       {/* Main Content */}
       <div style={{ flex: 1 }}>
         <div ref={HomeRef}>
           <HomeV3 />
         </div>
-        <div ref={SkillRef}>
-          <Skills2 />
+        <div>
+          <Domains />
         </div>
         <div ref={ExperienceRef}>
           <Experience2 />
         </div>
+        <div ref={SkillRef}>
+          <Skills2 />
+        </div>
+
         <div ref={ProjectsRef}>
           <Projects2 />
         </div>
-      <div style={{height:"100px"}}>
+        <div style={{ height: "100px" }}>
 
+        </div>
       </div>
-      </div>
-      
 
-    
-      {window.innerWidth<600&&(<div
+
+
+      {window.innerWidth < 600 && (<div
         style={{
           position: "fixed",
           bottom: 0,
           width: "100%",
           zIndex: 10,
-           // Optional: Styling for better visibility
+          // Optional: Styling for better visibility
 
         }}
       >

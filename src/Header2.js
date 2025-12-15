@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-import { BsBorderTop, BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
-import { ImMail } from "react-icons/im";
+
 import "./newcss.css";
 
 function Header2({ hr, sr, er, pr }) {
@@ -10,34 +8,33 @@ function Header2({ hr, sr, er, pr }) {
       reef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-  function open(url) {
-    window.open(url, "_blank");
-  }
-  function openGmail() {
-    window.location.href = "mailto:yassine.jellouli.2001@gmail.com";
-  }
+
   return (
-    <div className="backhead">
+    <div style={{backgroundColor:"transparent",zIndex:"5000",marginTop:"10px",boxSizing:"border-box"}}>
+      <div style={{display:"flex",justifyContent:"center",alignItems:"center",boxSizing:"border-box"}}>
       <div
         style={{
+          // backgroundColor: "rgba(0,0,0,0.5)",
+          color:"white",
+          // "backdrop-filter": "blur(10px)",
           alignItems: "center",
-          fontSize: "1.3rem",
-          padding: "10px",
-          color: "white",
+          justifyContent:"center",
+          padding: "5px",
           height: "30px",
-paddingLeft:window.innerWidth<600?"none":"10px",
-paddingRight:window.innerWidth<600?"none":"10px",
           display: "flex",
-          backgroundColor: "rgb(26, 25, 25)",
-          justifyContent: window.innerWidth < 600 ? "center" : "flex-start",
-          gap: window.innerWidth < 600 ? "5px" : "30px",
+          paddingLeft:"10px",
+          paddingRight:"10px",
+          borderRadius:"10px",
+          
+          
+          gap: "5px",
         }}
       >
         <span
           style={{
             cursor: "pointer",
             padding: window.innerWidth < 600 ? "6px" : "none",
-            fontWeight: window.innerWidth < 600 ? "800" : "none",
+            backgroundColor:"#FF2626"
           }}
           className="headerbtn"
           onClick={() => {
@@ -49,8 +46,25 @@ paddingRight:window.innerWidth<600?"none":"10px",
         <span
           style={{
             cursor: "pointer",
+
             padding: window.innerWidth < 600 ? "6px" : "none",
-            fontWeight: window.innerWidth < 600 ? "800" : "none",
+            backgroundColor:"#FF4D00"
+
+          }}
+          className="headerbtn"
+          onClick={() => {
+            scrollToDiv(er);
+          }}
+        >
+          Experience
+        </span>
+
+        <span
+          style={{
+            cursor: "pointer",
+            padding: window.innerWidth < 600 ? "6px" : "none",
+            backgroundColor:"#FFC226"
+
           }}
           className="headerbtn"
           onClick={() => {
@@ -63,7 +77,8 @@ paddingRight:window.innerWidth<600?"none":"10px",
           style={{
             cursor: "pointer",
             padding: window.innerWidth < 600 ? "6px" : "none",
-            fontWeight: window.innerWidth < 600 ? "800" : "none",
+            backgroundColor:"#FF9D26"
+
           }}
           className="headerbtn"
           onClick={() => {
@@ -72,54 +87,10 @@ paddingRight:window.innerWidth<600?"none":"10px",
         >
           Projects
         </span>
-        <span
-          style={{
-            cursor: "pointer",
 
-            padding: window.innerWidth < 600 ? "6px" : "none",
-            fontWeight: window.innerWidth < 600 ? "800" : "none",
-          }}
-          className="headerbtn"
-          onClick={() => {
-            scrollToDiv(er);
-          }}
-        >
-          Experience
-        </span>
-        <div
-          style={{
-            alignItems: "center",
-            color: "white",
-            display: "flex",
-            marginLeft:window.innerWidth < 600?"none":"auto",
-            backgroundColor: "transparent",
-            justifyContent: "center",
-            gap: "5px",
-          }}
-        >
-          <BsLinkedin
-            size={30}
-            className="iicon"
-            onClick={() => {
-              open("https://www.linkedin.com/in/yassine-jellouli-8241b2299/");
-            }}
-          />
-          <FaGithubSquare
-            size={35}
-            className="iicon"
-            onClick={() => {
-              open("https://github.com/jellouliyassine");
-            }}
-          />
-          <ImMail
-            size={32}
-            className="iicon"
-            onClick={() => {
-              openGmail();
-            }}
-          />
-        </div>
       </div>
+      </div>
+
     </div>
   );
 }
